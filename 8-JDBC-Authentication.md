@@ -1,7 +1,7 @@
 add maven dependency
 
 ```html
-    <dependency>
+                <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
@@ -26,7 +26,7 @@ logging.level.org.springframework.jdbc.core=TRACE
 update config to use jdbc
 
 ```java
-@Bean 
+        @Bean 
 	public UserDetailsManager userDetailsManager(DataSource datasource) {
 		return new JdbcUserDetailsManager(datasource);
 	}
